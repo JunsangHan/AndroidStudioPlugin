@@ -1,0 +1,32 @@
+<idea-plugin>
+    <id>com.plugin.togglelayoutbounds</id>
+    <name>Toggle layout bounds</name>
+    <vendor email="jshan0703@gmail.com">JS Han</vendor>
+
+    <description>show layout bounds this plugin made by kakaobank</description>
+
+    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+    <depends>org.jetbrains.android</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+<!--        <action id="ShowLayoutBoundsAction"-->
+<!--                class="ShowLayoutBoundsAction"-->
+<!--                text="Show Layout Bounds"-->
+<!--                description="Show layout bounds">-->
+<!--            <add-to-group group-id="ToolsMenu"/>-->
+<!--            <keyboard-shortcut keymap="$default" first-keystroke="ctrl meta alt Q"/>-->
+<!--        </action>-->
+        <action id="ToggleLayoutBoundsAction" class="ToggleLayoutBoundsAction" text="ToggleLayoutBoundsAction"
+                description="Toggle layout bounds action">
+            <add-to-group group-id="ToolsMenu"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="ctrl meta alt Q"/>
+        </action>
+    </actions>
+</idea-plugin>

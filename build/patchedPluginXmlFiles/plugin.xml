@@ -1,0 +1,20 @@
+<idea-plugin>
+  <version>1.0-SNAPSHOT.003</version>
+  <change-notes>
+      Add change notes here.&lt;br&gt;
+      &lt;em&gt;most HTML tags may be used&lt;/em&gt;</change-notes>
+  <idea-version since-build="201.8743" until-build="201.*"/>
+  <id>com.plugin.togglelayoutbounds</id>
+  <name>Toggle layout bounds</name>
+  <vendor email="jshan0703@gmail.com">JS Han</vendor>
+  <description>show layout bounds this plugin made by kakaobank</description>
+  <depends>com.intellij.modules.platform</depends>
+  <depends>org.jetbrains.android</depends>
+  <extensions defaultExtensionNs="com.intellij"/>
+  <actions>
+    <action id="ToggleLayoutBoundsAction" class="ToggleLayoutBoundsAction" text="ToggleLayoutBoundsAction" description="Toggle layout bounds action">
+      <add-to-group group-id="ToolsMenu"/>
+      <keyboard-shortcut keymap="$default" first-keystroke="ctrl meta alt Q"/>
+    </action>
+  </actions>
+</idea-plugin>

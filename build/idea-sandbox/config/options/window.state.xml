@@ -1,0 +1,27 @@
+<application>
+  <component name="DimensionService">
+    <location key="WELCOME_SCREEN.0.0.3360.2100@192dpi" x="1680" y="600" />
+  </component>
+  <component name="WindowManager">
+    <layout>
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+    </layout>
+  </component>
+  <component name="WindowStateApplicationService">
+    <state x="717" y="395" key="#Notifications" timestamp="1617121234180">
+      <screen x="0" y="23" width="1680" height="974" />
+    </state>
+    <state x="717" y="395" key="#Notifications/0.23.1680.974" timestamp="1617121234180" />
+    <state x="840" y="435" key="WELCOME_SCREEN" timestamp="1617144279122">
+      <screen x="0" y="23" width="1680" height="973" />
+    </state>
+    <state x="840" y="435" key="WELCOME_SCREEN/0.23.1680.973" timestamp="1617144279122" />
+    <state x="840" y="435" key="WELCOME_SCREEN/0.23.1680.974" timestamp="1617121246388" />
+  </component>
+</application>
