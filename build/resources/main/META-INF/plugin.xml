@@ -1,20 +1,27 @@
 <idea-plugin>
-  <version>1.0-SNAPSHOT.003</version>
+  <version>1.0-SNAPSHOT.002</version>
   <change-notes>
       Add change notes here.&lt;br&gt;
       &lt;em&gt;most HTML tags may be used&lt;/em&gt;</change-notes>
   <idea-version since-build="201.8743" until-build="201.*"/>
-  <id>com.plugin.togglelayoutbounds</id>
-  <name>Toggle layout bounds</name>
-  <vendor email="jshan0703@gmail.com">JS Han</vendor>
-  <description>show layout bounds this plugin made by kakaobank</description>
+  <id>com.kakaobank.kabang.plugin.Tools</id>
+  <name>Kabang Tools</name>
+  <vendor email="june.han@kakaobank.com">Kabang Tools</vendor>
+  <description>Kakaobank Tools, this tools provide useful functions. Q is "ToggleLayoutBounds" and W is "ChangeLayoutSize"</description>
   <depends>com.intellij.modules.platform</depends>
   <depends>org.jetbrains.android</depends>
   <extensions defaultExtensionNs="com.intellij"/>
   <actions>
-    <action id="ToggleLayoutBoundsAction" class="ToggleLayoutBoundsAction" text="ToggleLayoutBoundsAction" description="Toggle layout bounds action">
-      <add-to-group group-id="ToolsMenu"/>
-      <keyboard-shortcut keymap="$default" first-keystroke="ctrl meta alt Q"/>
-    </action>
+    <group id="KaBangGroup" text="Kabang Tools" popup="true">
+      <add-to-group group-id="ToolsMenu" anchor="last"/>
+      <action id="com.kakaobankg.kabang.plugin.ToggleLayoutBoundsAction" class="ToggleLayoutBoundsAction" text="ToggleLayoutBoundsAction" description="Toggle layout bounds action">
+        <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+        <keyboard-shortcut keymap="$default" first-keystroke="shift Q"/>
+      </action>
+      <action id="com.kakaobankg.kabang.plugin.ChangeLayoutSizeAction" class="ChangeLayoutSizeAction" text="ChangeLayoutSizeAction" description="Change layout size action">
+        <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+        <keyboard-shortcut keymap="$default" first-keystroke="shift W"/>
+      </action>
+    </group>
   </actions>
 </idea-plugin>

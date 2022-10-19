@@ -1,9 +1,9 @@
 <idea-plugin>
-    <id>com.plugin.togglelayoutbounds</id>
-    <name>Toggle layout bounds</name>
-    <vendor email="jshan0703@gmail.com">JS Han</vendor>
+    <id>com.kakaobank.kabang.plugin.Tools</id>
+    <name>Kabang Tools</name>
+    <vendor email="june.han@kakaobank.com">Kabang Tools</vendor>
 
-    <description>show layout bounds this plugin made by kakaobank</description>
+    <description>Kakaobank Tools, this tools provide useful functions. Q is "ToggleLayoutBounds" and W is "ChangeLayoutSize"</description>
 
     <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
          on how to target different products -->
@@ -15,18 +15,18 @@
     </extensions>
 
     <actions>
-        <!-- Add your actions here -->
-<!--        <action id="ShowLayoutBoundsAction"-->
-<!--                class="ShowLayoutBoundsAction"-->
-<!--                text="Show Layout Bounds"-->
-<!--                description="Show layout bounds">-->
-<!--            <add-to-group group-id="ToolsMenu"/>-->
-<!--            <keyboard-shortcut keymap="$default" first-keystroke="ctrl meta alt Q"/>-->
-<!--        </action>-->
-        <action id="ToggleLayoutBoundsAction" class="ToggleLayoutBoundsAction" text="ToggleLayoutBoundsAction"
-                description="Toggle layout bounds action">
-            <add-to-group group-id="ToolsMenu"/>
-            <keyboard-shortcut keymap="$default" first-keystroke="ctrl meta alt Q"/>
-        </action>
+        <group id="KaBangGroup" text="Kabang Tools" popup="true">
+            <add-to-group group-id="ToolsMenu" anchor="last"/>
+            <action id="com.kakaobankg.kabang.plugin.ToggleLayoutBoundsAction" class="ToggleLayoutBoundsAction"
+                    text="ToggleLayoutBoundsAction" description="Toggle layout bounds action">
+                <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+                <keyboard-shortcut keymap="$default" first-keystroke="ctrl meta alt Q"/>
+            </action>
+            <action id="com.kakaobankg.kabang.plugin.ChangeLayoutSizeAction" class="ChangeLayoutSizeAction"
+                    text="ChangeLayoutSizeAction" description="Change layout size action">
+                <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+                <keyboard-shortcut keymap="$default" first-keystroke="ctrl meta alt W"/>
+            </action>
+        </group>
     </actions>
 </idea-plugin>

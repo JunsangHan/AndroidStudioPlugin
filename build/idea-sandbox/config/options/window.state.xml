@@ -1,6 +1,6 @@
 <application>
   <component name="DimensionService">
-    <location key="WELCOME_SCREEN.0.0.3360.2100@192dpi" x="1680" y="600" />
+    <location key="WELCOME_SCREEN.0.0.3360.2100@192dpi" x="998" y="600" />
   </component>
   <component name="WindowManager">
     <layout>
@@ -18,10 +18,12 @@
       <screen x="0" y="23" width="1680" height="974" />
     </state>
     <state x="717" y="395" key="#Notifications/0.23.1680.974" timestamp="1617121234180" />
-    <state x="840" y="435" key="WELCOME_SCREEN" timestamp="1617144279122">
-      <screen x="0" y="23" width="1680" height="973" />
+    <state x="840" y="435" key="WELCOME_SCREEN" timestamp="1617600724539">
+      <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state x="840" y="435" key="WELCOME_SCREEN/0.23.1680.973" timestamp="1617144279122" />
-    <state x="840" y="435" key="WELCOME_SCREEN/0.23.1680.974" timestamp="1617121246388" />
+    <state x="840" y="434" key="WELCOME_SCREEN/0.23.1680.972" timestamp="1617297016986" />
+    <state x="840" y="435" key="WELCOME_SCREEN/0.23.1680.973" timestamp="1617362866654" />
+    <state x="840" y="435" key="WELCOME_SCREEN/0.23.1680.974" timestamp="1617351023180" />
+    <state x="840" y="435" key="WELCOME_SCREEN/0.23.1680.975" timestamp="1617600724539" />
   </component>
 </application>

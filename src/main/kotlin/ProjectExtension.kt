@@ -16,6 +16,22 @@ fun IDevice.setLayoutBounds(enable: Boolean) {
     )
 }
 
+fun IDevice.setLayoutSize(width: Int, height: Int) {
+    val command = if (width > 0 && height > 0) "${width}x${height}" else "reset"
+    executeShellCommand(
+        "wm size $command",
+        NullOutputReceiver()
+    )
+}
+
+fun IDevice.setLayoutDensity(dp: Int) {
+    val command = if (dp > 0) "$dp" else "reset"
+    executeShellCommand(
+        "wm density $command",
+        NullOutputReceiver()
+    )
+}
+
 fun Project.showNotification(message: String) {
     NotificationGroup("layout bounds", NotificationDisplayType.BALLOON, true)
         .createNotification(

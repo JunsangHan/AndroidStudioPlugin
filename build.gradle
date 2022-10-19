@@ -4,11 +4,11 @@ plugins {
     id 'org.jetbrains.kotlin.jvm' version '1.4.10'
 }
 
-group 'com.plugin.june'
-version '1.0-SNAPSHOT.003'
+group 'com.kakaobank.kabang.plugin'
+version '1.0-SNAPSHOT.001'
 
 repositories {
-    mavenCental()
+    mavenCentral()
 }
 
 dependencies {
